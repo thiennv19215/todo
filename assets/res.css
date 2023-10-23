@@ -1,0 +1,86 @@
+
+
+@keyframes octocat-wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-25deg);
+    }
+
+    40% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(-25deg);
+    }
+
+    80% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 500px) {
+    .github-corner:hover .octo-arm {
+        animation: none;
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+    }
+}
+
+
+
+li{
+    padding: 10px;
+    word-wrap: break-word; 
+     flex-wrap: wrap; 
+    font-size: 23px;
+    flex: 1; 
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-wrap: anywhere;
+    transition: all 2s;
+    margin: 12px;
+
+}
+ul {
+    transition: all 1s;
+    min-width: 25%;
+    /* To remove the bullets of unordered list */
+    list-style: none;
+    width: calc(100% - 25%);
+    padding-bottom: 25px;
+}
+.btn{
+    border: none;
+    outline: none; 
+    transition: box-shadow 200ms ease, background-color 200ms ease-in-out;
+    background-color: rgb(247, 226, 223);
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+li.added {
+    background-color: #7EBD6D; /* Change background color when added */
+  }
+  
+  li.removed {
+    background-color: #D9534F; /* Change background color when removed */
+    transform: scale(0); /* Optionally, you can scale the item down when removed */
+  }
+
+span {
+    margin-left: 10px;
+}
